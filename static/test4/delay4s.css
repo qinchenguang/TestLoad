@@ -1,0 +1,15 @@
+.class-green{
+    background: green;
+    color: #fff;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+#red{
+    background: red;
+}
+img{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}

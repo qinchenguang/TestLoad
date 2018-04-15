@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>测试Domcontentload之后插入css影响load吗？</title>
+    <script>
+        console.log('立即执行')
+    </script>
+    <script src='./delay0s.js'></script>
+    <link href='delay0s.css' type='text/css' rel='stylesheet'>
+</head>
+<body>
+<div id='green' class='class-green'>内嵌js + 延时0s的js（DOMcontentload之后1s插入延时8s的css） + 延时0s的css</div>
+</body>
+</html>

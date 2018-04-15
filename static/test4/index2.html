@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>js、css、img三个资源的加载顺序</title>
+    <link href='delay0s.css' type='text/css' rel='stylesheet'>
+</head>
+<body>
+<div id='green' class='class-green'>延时0s的css + 延0s的js（动态插入8sjs和4scss）</div>
+<img src='./img/delay7s.jpg' alt='图片'/>
+<img src='./img/delay0s.jpg' alt='图片'/>
+<img src='./img/delay1s.jpg' alt='图片'/>
+<img src='./img/delay4s.jpg' alt='图片'/>
+<script src='delay0s.js'></script>
+
+</body>
+</html>

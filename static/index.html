@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>测试页面</title>
+    <link href='index.css' type='text/css' rel='stylesheet'>
+</head>
+<body>
+    <div>
+        <h2>测试CSS的加载会不会阻塞js的执行</h2>
+        <p class='desc'><a target='_blank' href='./test1/index.html'>延时3s的css + 内嵌js + 延时1s的js</a></p>
+        <p class='desc'><a target='_blank' href='./test1/index2.html'>内嵌js + 延时3s的css + 延时1s的js + 延时8s的css</a></p>
+    </div>
+     <div>
+        <h2>测试Domcontentload之后插入css影响load吗</h2>
+        <p class='desc'><a target='_blank' href='./test2/index.html'>一个内联的js，加上1个延时1s的js,延时1s的js在DOmcontentload之后1s插入一条延时2s的css</a></p>
+        <p class='desc'><a target='_blank' href='./test2/index2.html'>一条立即的内嵌js + 延时1s的js（DOMcontentload之后1后插入延时2s的css） + 延时8s的css</a></p>
+        <p class='desc'><a target='_blank' href='./test2/index3.html'>内嵌的js + 延时0s的js（DOMcontentload之后插入1s插入延时8s的css）+ 延时2s的css</a></p>
+        <p class='desc'><a target='_blank' href='./test2/index4.html'>内嵌js + 延时0s的js（DOMcontentload之后1s插入延时8s的css） + 延时0s的css</a></p>
+    </div>
+     <div>
+        <h2>js的延时会不会阻塞页面的呈现</h2>
+        <p class='desc'><a target='_blank' href='./test3/index.html'>未延时的css + 延时8s的js</a></p>
+        <p class='desc'><a target='_blank' href='./test3/index2.html'>未延时的css + 延时8s的js(放在页面底部)</a></p>
+    </div>
+    <div>
+        <h2>测试js css img的加载阻塞</h2>
+        <p class='desc'><a target='_blank' href='./test4/index.html'>延时4s的css + 延时4s的js+多个延时图片</a></p>
+        <p class='desc'><a target='_blank' href='./test4/index2.html'>延时0s的css + 延0s的js（动态插入8sjs和4scss） + 延时图片</a></p>
+    </div>
+
+</body>
+</html>

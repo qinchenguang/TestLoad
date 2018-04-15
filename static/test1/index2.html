@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>测试css加载是否会影响js的执行</title>
+    <script>
+        console.log('立即执行')
+    </script>
+    <link href='delay3s.css' type='text/css' rel='stylesheet'>
+    <script src='delay1s.js'></script>
+    <link href='delay8s.css' type='text/css' rel='stylesheet'>
+</head>
+<body>
+<div id='green' class='class-green'>内嵌js + 延时3s的css + 延时1s的js + 延时8s的css</div>
+</body>
+</html>
